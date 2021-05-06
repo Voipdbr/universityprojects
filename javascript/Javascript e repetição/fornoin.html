@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>JavaScript e Estrutura de Repetição</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<button type="submit" onclick="IN1()" id="1">No For/IN</button>
+<button type="submit" onclick="IN2()" id="2">YES For/IN</button>
+</body>
+<script type="text/javascript" id="js1">
+function IN1(){
+var frutas = ['Laranja', 'Uva', 'Pera'];
+for (i = 0; i < frutas.length; i++){
+alert('Nome da Fruta contida no Array Sem IN: ' + frutas[i]);
+}
+}
+</script>
+<script type="text/javascript" id="js2">
+function IN2(){
+var frutas = ['Laranja', 'Uva', 'Pera'];
+for(var fruta in frutas){
+alert ('Nome da Fruta contida no Array IN: ' + frutas[fruta]);
+}
+}
+</script>
+</html>

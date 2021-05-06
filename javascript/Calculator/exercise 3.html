@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Exercício Faculdade 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	var numero1 = prompt("Insira o primeiro número: ");
+	var numero2 = prompt("Insira o segundo número: ");
+	var compositorOP = prompt("Qual operação deseja realizar?: (+) (-) (/) (*)"); 
+	var resultadoOP = resultadoOP(numero1, numero2, compositorOP);
+	alert('O resultado da operação é igual a:' + resultadoOP);
+	function resultadoOP(numero1, numero2, compositorOP){
+	var resultado = 0;
+	resultado = eval(numero1 + compositorOP + numero2);
+	return resultado;
+	}
+	</script>
+</html>

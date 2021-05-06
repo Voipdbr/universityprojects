@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Example School Page with JavaScript</title>
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+</head>
+	<body>
+		<div id="exibe_resultado">Resultado da Multiplicação:	</div>
+		
+		
+	</body>
+		<script type="text/javascript">
+			var variavel;
+			variavel = 3 + 3;
+			alert(variavel);
+			var resultadoMultiplicacao = multiplique(10, 50);
+			var divlocal = document.getElementById('exibe_resultado');
+			divLocal.innerHTML += resultadoMultiplicacao;
+			function multiplique(numero1, numero2){
+			var resultado = 0;
+			resultado = numero1 * numero2;
+			return resultado;
+			}
+	</script>
+</html>
